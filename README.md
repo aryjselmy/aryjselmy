@@ -7,19 +7,28 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     text-align: center;
+    padding: 20px;
     background-color: #f9f9f9;
     color: #333;
-    padding: 20px;
-  }
-  img {
-    margin-top: 20px;
-    border-radius: 10px;
   }
   #animated-text {
     color: #e63946;
     font-weight: bold;
+  }
+  img {
+    margin-top: 30px; /* espace avant l'image */
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    color: #1d3557;
+    text-decoration: none;
   }
 </style>
 </head>
@@ -33,7 +42,7 @@
 <hr>
 
 <h2>About Me</h2>
-<ul style="list-style:none; padding:0;">
+<ul>
   <li>🌟 Passionate about technology and innovation</li>
   <li>📚 Learning and growing in computer science and engineering</li>
   <li>🛠️ Always ready to solve challenging problems</li>
@@ -41,7 +50,7 @@
 </ul>
 
 <h2>Skills</h2>
-<ul style="list-style:none; padding:0;">
+<ul>
   <li>Programming: C, C++, Python, JavaScript</li>
   <li>Web Development: HTML, CSS, React</li>
   <li>Database: MySQL, SQLite</li>
@@ -49,16 +58,16 @@
 </ul>
 
 <h2>Contact Me</h2>
-<ul style="list-style:none; padding:0;">
+<ul>
   <li>✉️ School Email: selmi.arij@esprit.com</li>
   <li>✉️ Personal Email: arijselmi580@gmail.com</li>
   <li>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/yourprofile</a></li>
   <li>🐦 Twitter: <a href="https://twitter.com" target="_blank">twitter.com/yourprofile</a></li>
 </ul>
 
-<!-- L'image en bas -->
+<!-- Image en bas -->
 <p>
-  <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" width="400" alt="Mon Image"/>
+  <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" alt="Mon Image">
 </p>
 
 <script>
@@ -66,8 +75,7 @@ const words = ["Problem Solver", "Tech Enthusiast", "Innovative Thinker", "Learn
 let i = 0;
 
 function rotateText() {
-    const el = document.getElementById("animated-text");
-    el.innerHTML = words[i];
+    document.getElementById("animated-text").innerHTML = words[i];
     i = (i + 1) % words.length;
     setTimeout(rotateText, 2000);
 }
