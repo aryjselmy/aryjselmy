@@ -17,10 +17,10 @@
     font-weight: bold;
   }
   img {
-    margin-top: 30px; /* espace avant l'image */
     border-radius: 10px;
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px; /* espace après l'image */
   }
   ul {
     list-style: none;
@@ -34,6 +34,12 @@
 </head>
 <body>
 
+<!-- IMAGE EN PREMIER -->
+<p>
+  <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" alt="Mon Image">
+</p>
+
+<!-- TEXTE APRÈS L'IMAGE -->
 <h1>Hi there, I'm Arij Selmi! 👋</h1>
 <p>💻 1st Year Engineering Student | 🚀 Entrepreneurial Spirit | 🌱 Tech Innovator</p>
 
@@ -64,11 +70,6 @@
   <li>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/yourprofile</a></li>
   <li>🐦 Twitter: <a href="https://twitter.com" target="_blank">twitter.com/yourprofile</a></li>
 </ul>
-
-<!-- Image en bas -->
-<p>
-  <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" alt="Mon Image">
-</p>
 
 <script>
 const words = ["Problem Solver", "Tech Enthusiast", "Innovative Thinker", "Learner"];
