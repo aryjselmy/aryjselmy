@@ -1,130 +1,88 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mettre à jour le profil</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            width: 400px;
-            text-align: center;
-        }
-
-        form label {
-            display: block;
-            margin-top: 15px;
-            text-align: left;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            transition: 0.3s;
-        }
-
-        form input:focus, form textarea:focus {
-            border-color: #4a90e2;
-            box-shadow: 0 0 5px #4a90e2;
-            outline: none;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #4a90e2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #357ABD;
-        }
-
-        .message {
-            margin-top: 20px;
-            padding: 10px;
-            background: #d4edda;
-            color: #155724;
-            border-radius: 5px;
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: all 0.5s ease;
-        }
-
-        .message.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arij Selmi - Profile</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  #animated-text {
+    color: #e63946;
+    font-weight: bold;
+  }
+  img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* espace après l'image */
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    color: #1d3557;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h2>Mettre à jour le profil</h2>
-        <form id="updateForm">
-            <label>Nom :</label>
-            <input type="text" id="name" placeholder="Votre nom" required>
 
-            <label>Email :</label>
-            <input type="email" id="email" placeholder="Votre email" required>
+<!-- IMAGE EN PREMIER -->
+<p>
+  <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" alt="Mon Image">
+</p>
 
-            <label>Photo de profil :</label>
-            <input type="file" id="photo" accept="image/*">
+<!-- TEXTE APRÈS L'IMAGE -->
+<h1>Hi there, I'm Arij Selmi! 👋</h1>
+<p>💻 1st Year Engineering Student | 🚀 Entrepreneurial Spirit | 🌱 Tech Innovator</p>
 
-            <label>Bio :</label>
-            <textarea id="bio" placeholder="Parlez de vous..."></textarea>
+<p><strong>I am a</strong> <span id="animated-text"></span></p>
 
-            <button type="submit">Mettre à jour</button>
-        </form>
+<hr>
 
-        <div class="message" id="message">Profil mis à jour avec succès ! ✅</div>
-    </div>
+<h2>About Me</h2>
+<ul>
+  <li>🌟 Passionate about technology and innovation</li>
+  <li>📚 Learning and growing in computer science and engineering</li>
+  <li>🛠️ Always ready to solve challenging problems</li>
+  <li>💡 Interested in AI, software development, and tech projects</li>
+</ul>
 
-    <script>
-        const form = document.getElementById('updateForm');
-        const message = document.getElementById('message');
+<h2>Skills</h2>
+<ul>
+  <li>Programming: C, C++, Python, JavaScript</li>
+  <li>Web Development: HTML, CSS, React</li>
+  <li>Database: MySQL, SQLite</li>
+  <li>Tools: Git, GitHub, VS Code, Arduino</li>
+</ul>
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+<h2>Contact Me</h2>
+<ul>
+  <li>✉️ School Email: selmi.arij@esprit.com</li>
+  <li>✉️ Personal Email: arijselmi580@gmail.com</li>
+  <li>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/yourprofile</a></li>
+  <li>🐦 Twitter: <a href="https://twitter.com" target="_blank">twitter.com/yourprofile</a></li>
+</ul>
 
-            // Récupérer les valeurs du formulaire
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const bio = document.getElementById('bio').value;
-            const photo = document.getElementById('photo').files[0];
+<script>
+const words = ["Problem Solver", "Tech Enthusiast", "Innovative Thinker", "Learner"];
+let i = 0;
 
-            // Simulation d'update (ex: envoyer via AJAX à votre backend)
-            setTimeout(() => {
-                message.classList.add('show');
+function rotateText() {
+    document.getElementById("animated-text").innerHTML = words[i];
+    i = (i + 1) % words.length;
+    setTimeout(rotateText, 2000);
+}
 
-                // Masquer après 3 secondes
-                setTimeout(() => {
-                    message.classList.remove('show');
-                }, 3000);
+rotateText();
+</script>
 
-                // Reset formulaire si besoin
-                // form.reset();
-            }, 1000);
-        });
-    </script>
 </body>
 </html>
