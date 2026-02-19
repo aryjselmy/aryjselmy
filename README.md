@@ -4,8 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Update Profil</title>
-<style>
-/* ===== CSS ===== */
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Mettre à jour le profil</h2>
+    <form id="updateForm">
+        <label>Nom :</label>
+        <input type="text" id="name" placeholder="Votre nom" required>
+
+        <label>Email :</label>
+        <input type="email" id="email" placeholder="Votre email" required>
+
+        <label>Photo de profil :</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <label>Bio :</label>
+        <textarea id="bio" placeholder="Parlez de vous..."></textarea>
+
+        <button type="submit">Mettre à jour</button>
+    </form>
+
+    <div class="message" id="message">Profil mis à jour avec succès ! ✅</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
 body {
     font-family: Arial, sans-serif;
     background: #f0f2f5;
@@ -13,7 +40,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
@@ -25,16 +51,10 @@ body {
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
 form label {
     display: block;
     margin-top: 15px;
     text-align: left;
-    font-weight: bold;
 }
 
 form input, form textarea {
@@ -84,33 +104,6 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
 }
-</style>
-</head>
-<body>
-
-<div class="container">
-    <h2>Mettre à jour le profil</h2>
-    <form id="updateForm">
-        <label>Nom :</label>
-        <input type="text" id="name" placeholder="Votre nom" required>
-
-        <label>Email :</label>
-        <input type="email" id="email" placeholder="Votre email" required>
-
-        <label>Photo de profil :</label>
-        <input type="file" id="photo" accept="image/*">
-
-        <label>Bio :</label>
-        <textarea id="bio" placeholder="Parlez de vous..."></textarea>
-
-        <button type="submit">Mettre à jour</button>
-    </form>
-
-    <div class="message" id="message">Profil mis à jour avec succès ! ✅</div>
-</div>
-
-<script>
-/* ===== JavaScript ===== */
 const form = document.getElementById('updateForm');
 const message = document.getElementById('message');
 
@@ -137,7 +130,3 @@ form.addEventListener('submit', function(e) {
         // form.reset();
     }, 1000);
 });
-</script>
-
-</body>
-</html>
