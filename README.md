@@ -4,9 +4,12 @@
 
 <h2 align="center" style="color:#d63384;"> Hi there, I'm Arij Selmi! 👋</h2>
 
-<!-- Texte animé corrigé avec emojis encodés -->
+<p align="center" style="font-size: 18px; color:#d63384;">
+  💻 Engineering Student | 🚀 Tech Enthusiast | 🌱 Future Software Engineer
+</p>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=ff69b4&center=true&vCenter=true&width=500&lines=%F0%9F%92%BB+Engineering+Student;%F0%9F%9A%80+Tech+Enthusiast;%F0%9F%8C%B1+Future+Software+Engineer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=4000&pause=1000&color=ff69b4&center=true&vCenter=true&width=500&lines=Engineering+Student;Future+Software+Engineer;Problem+Solver;Tech+Enthusiast" />
 </p>
 
 ---
