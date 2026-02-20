@@ -21,7 +21,7 @@
 
         img {
             border-radius: 10px;
-            max-width: 250px;
+            width: 250px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -44,7 +44,6 @@
 
 <body>
 
-    <!-- IMAGE -->
     <img src="ChatGPT Image 19 févr. 2026, 23_23_53.png" alt="My Photo">
 
     <h1>Hi there, I'm Arij Selmi 👋</h1>
@@ -65,7 +64,7 @@
     <h2>Skills</h2>
     <ul>
         <li>Programming: C, C++, Python, JavaScript</li>
-        <li>Web: HTML, CSS, React</li>
+        <li>Web: HTML, CSS</li>
         <li>Database: MySQL, SQLite</li>
         <li>Tools: Git, GitHub, VS Code, Arduino</li>
     </ul>
@@ -74,8 +73,6 @@
     <ul>
         <li>✉️ School: selmi.arij@esprit.com</li>
         <li>✉️ Personal: arijselmi580@gmail.com</li>
-        <li>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com</a></li>
-        <li>🐦 Twitter: <a href="https://twitter.com" target="_blank">twitter.com</a></li>
     </ul>
 
     <script>
