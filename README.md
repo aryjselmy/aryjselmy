@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="pdc1.jpg" alt="Cover Photo" width="100%" style="border-radius: 15px; max-width: 800px;" />
+  <img src="télécharger.jpg" alt="Cover Photo" width="100%" style="border-radius: 15px; max-width: 800px;" />
 </p>
 
 <h2 align="center"> Hi there, I'm Arij Selmi! 👋</h2>
