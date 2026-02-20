@@ -31,15 +31,6 @@ android • bootstrap • c • css3 • git • html5 • java • javascript �
 
 ---
 
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arijselmi&show_icons=true&theme=default" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arijselmi&layout=compact" height="165"/>
-</p>
-
----
-
 ## 🚀 Current Focus
 
 🔭 **Building:** Intelligent applications with Spring Boot & Android  
