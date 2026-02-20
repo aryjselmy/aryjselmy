@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="télécharger.jpg" alt="Cover Photo" width="400px" style="border-radius: 15px;" />
+  <img src="télécharger.jpg" alt="Cover Photo" width="250px" style="border-radius: 15px;" />
 </p>
 
 <h2 align="center" style="color:#d63384;"> Hi there, I'm Arij Selmi! 👋</h2>
