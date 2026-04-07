@@ -46,8 +46,7 @@ android • bootstrap • c • css3 • git • html5 • java • javascript �
 - 💼 LinkedIn: [https://www.linkedin.com/in/arij-selmi](https://www.linkedin.com/in/arij-selmi)  
 - 📧 Academic Email: selmi.arij@esprit.tn  
 - 📩 Personal Email: arijselmi580@gmail.com  
-- 💻 GitHub: [https://github.com/arijselmi](https://github.com/arijselmi)  
-
+- 💻 GitHub:  https://www.linkedin.com/in/arij-selmi-155327288/
 ---
 
 ## ✨ Fun Facts & Philosophy
