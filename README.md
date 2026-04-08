@@ -27,7 +27,7 @@ Passionate about technology and innovation, I enjoy building smart solutions and
 
 ## 🛠 Languages and Tools
 
-android • bootstrap • c • css3 • git • html5 • java • javascript • linux • matlab • mysql • php • postman • python • spring • symfony
+android • xampp • c • c++ • css • git • html • java • javascript • linux • mysql • php • python • spring • symfony
 
 ---
 
