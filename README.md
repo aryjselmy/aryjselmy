@@ -27,7 +27,7 @@ Passionate about technology and innovation, I enjoy building smart solutions and
 
 ## 🛠 Languages and Tools
 
-android • xampp • c • c++ • css • git • html • java • javascript • linux • mysql • php • python • spring • symfony
+flutterflow • xampp • c • c++ • css • git • html • java • javascript • linux • mysql • php • python • spring • symfony 
 
 ---
 
